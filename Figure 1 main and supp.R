@@ -36,9 +36,11 @@ traits_data$trait_name = str_replace_all(traits_data$trait_name, " ", "")    # A
 traits_data$trait_name = str_replace_all(traits_data$trait_name, ";", "_") 
 traits_data$trait_name = str_replace_all(traits_data$trait_name, "-", "_")
 
-
-## For Model Validation
-
+########################################################
+##                                                    ##
+##                For Model Validation                ##
+##                                                    ##
+########################################################
 ### This will generate global pcos vs ctrls comparison for each trait, in a pdf in the working directory, 
 
 all_ctrlVslet = function(select_trait){
@@ -110,7 +112,11 @@ plot_strain_variance('AUC')
 
 
 
-##### Heritability estimates
+########################################################
+##                                                    ##
+##                Heritability estimates              ##
+##                                                    ##
+########################################################
 
 ## Load packages
 library(tidyverse)
@@ -431,7 +437,11 @@ data %>%
 
 
 
-##### Strain personalization figures
+########################################################
+##                                                    ##
+##            Strain personalization figure           ##
+##                                                    ##
+########################################################
 
 
 library(pheatmap)
